@@ -33,3 +33,7 @@ Route::get('/debits-credits',function(){
 Route::get('/customers',function(){
     return view('customers');
 })->name('customers');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
